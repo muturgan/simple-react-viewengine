@@ -1,0 +1,45 @@
+{
+  "name": "simple-react-viewengine",
+  "version": "1.0.0",
+  "description": "This is a simple view engine which renders React components on server. It renders static markup and *does not* support mounting those views on the client.",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf dist && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muturgan/simple-react-viewengine.git"
+  },
+  "keywords": [
+    "view engine",
+    "react"
+  ],
+  "author": "Andrey Sakharov <caxap_8787@mail.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/muturgan/simple-react-viewengine/issues"
+  },
+  "homepage": "https://github.com/muturgan/simple-react-viewengine#readme",
+  "engines": {
+    "node": "^12.16.3",
+    "npm": "^6.14.4"
+  },
+  "dependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-flow-strip-types": "^7.9.0",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/register": "^7.9.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.37",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.7",
+    "rimraf": "^3.0.2",
+    "tslint": "^5.20.1",
+    "typescript": "^3.8.3"
+  }
+}
