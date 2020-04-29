@@ -1,4 +1,5 @@
-import react, { createElement, ComponentClass } from 'react';
+import type { ComponentClass } from 'react';
+const { createElement } = require('react');
 const { renderToStaticMarkup } = require('react-dom/server');
 const { resolve, join } = require('path');
 
@@ -47,4 +48,3 @@ const engineFactory = (templateRoot: string) =>
 
 export default engineFactory;
 module.exports = engineFactory;
-export const React = react;
