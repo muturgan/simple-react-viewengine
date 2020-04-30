@@ -5,8 +5,10 @@ const { renderToStaticMarkup } = require('react-dom/server');
 const { resolve, join } = require('path');
 const engineOptions = {
     babel: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
         presets: [
             '@babel/preset-react',
+            '@babel/preset-typescript',
             [
                 '@babel/preset-env',
                 {
