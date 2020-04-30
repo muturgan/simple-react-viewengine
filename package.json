@@ -1,6 +1,6 @@
 {
   "name": "simple-react-viewengine",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This is a simple view engine which renders React components on server. It renders static markup and *does not* support mounting those views on the client.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",

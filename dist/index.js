@@ -19,7 +19,7 @@ const engineOptions = {
         plugins: ['@babel/transform-flow-strip-types'],
     },
 };
-const engineFactory = (templateRoot) => {
+exports.engineFactory = (templateRoot) => {
     const templateDir = resolve(templateRoot);
     require('@babel/register')(Object.assign({ only: [].concat(templateDir) }, engineOptions.babel));
     return (templateName, props) => {
@@ -31,5 +31,3 @@ const engineFactory = (templateRoot) => {
         return markup;
     };
 };
-exports.default = engineFactory;
-module.exports = engineFactory;

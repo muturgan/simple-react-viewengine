@@ -22,7 +22,7 @@ const engineOptions = {
 };
 
 
-const engineFactory = (templateRoot: string) =>
+export const engineFactory = (templateRoot: string) =>
 {
    const templateDir = resolve(templateRoot);
 
@@ -45,6 +45,3 @@ const engineFactory = (templateRoot: string) =>
       return markup;
    };
 };
-
-export default engineFactory;
-module.exports = engineFactory;
