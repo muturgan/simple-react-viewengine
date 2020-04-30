@@ -33,4 +33,3 @@ const engineFactory = (templateRoot) => {
 };
 exports.default = engineFactory;
 module.exports = engineFactory;
-//# sourceMappingURL=index.js.map
